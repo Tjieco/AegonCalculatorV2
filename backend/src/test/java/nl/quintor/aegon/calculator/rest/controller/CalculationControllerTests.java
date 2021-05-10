@@ -1,13 +1,12 @@
-package calculator.rest.controller;
+package nl.quintor.aegon.calculator.rest.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import nl.quintor.aegon.calculator.model.Calculation;
 import nl.quintor.aegon.calculator.model.CalculationType;
-import nl.quintor.aegon.calculator.rest.controller.CalculationController;
 import nl.quintor.aegon.calculator.rest.dto.CalculationDto;
 import nl.quintor.aegon.calculator.rest.dto.CalculationPayload;
 import nl.quintor.aegon.calculator.service.CalculationService;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;

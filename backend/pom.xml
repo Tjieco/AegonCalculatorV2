@@ -11,9 +11,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>nl.quintor.aegon</groupId>
-    <artifactId>calculator</artifactId>
+    <artifactId>nl.quintor.aegon.calculator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Simple calculator</name>
+    <name>Simple nl.quintor.aegon.calculator</name>
     <description>Calculator assessment project for Aegon v2</description>
 
     <properties>
@@ -61,8 +61,9 @@
             <version>2.0.1.Final</version>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>5.7.0</version>
             <scope>test</scope>
         </dependency>
 

@@ -1,0 +1,24 @@
+<table class="table table-hover overflow">
+    <caption>History</caption>
+    <thead>
+      <tr>
+        <th id="first">First value</th>
+        <th id="second">Second value</th>
+        <th id="calculationType">Operator</th>
+        <th id="result">Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let calculation of getCalculations()">
+        <td>{{ calculation.first }}</td>
+        <td> {{ calculation.second }}</td>
+        <td [ngSwitch]= calculation.type >
+            <p *ngSwitchCase="'ADD'">+</p>
+            <p *ngSwitchCase="'SUBTRACT'">-</p>
+            <p *ngSwitchCase="'MULTIPLY'">*</p>
+            <p *ngSwitchCase="'DIVIDE'">/</p>
+        </td>
+        <td> {{ calculation.result }}</td>
+      </tr>
+    </tbody>
+  </table>

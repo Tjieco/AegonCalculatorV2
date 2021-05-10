@@ -1,8 +1,9 @@
-package calculator.service;
+package nl.quintor.aegon.calculator.service;
 
-import nl.quintor.aegon.calculator.service.SimpleCalculator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -52,9 +53,10 @@ public class SimpleCalculatorTests {
         assertThrows(ArithmeticException.class, () -> simpleCalculator.divide(first, second));
     }
 
-    @Test
-    public void testDivideNumberByZero() {
-        int first = 3;
+    @ParameterizedTest
+    @ValueSource(ints = {-1,0,1,Integer.MAX_VALUE, Integer.MIN_VALUE})
+    public void testDivideNumberByZero(int x) {
+        int first = x;
         int second = 0;
         assertThrows(ArithmeticException.class, () -> simpleCalculator.divide(first, second));
     }
