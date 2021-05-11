@@ -22,6 +22,7 @@ export class HistoryService {
   }
 
   addCalculation(calculation: Calculation) {
+    if (this.calculations == null) this.calculations = [];
     this.calculations.push(calculation);
   }
 }
