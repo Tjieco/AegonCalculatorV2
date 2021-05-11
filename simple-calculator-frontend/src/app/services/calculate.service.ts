@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { CalculationOperator } from '../components/calculate/calculate.component';
 import { HttpClient } from '@angular/common/http';
 import { Calculation } from '../model/calculation';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { CalculationOperator } from '../model/calculationOperator';
 
 @Injectable({
   providedIn: 'root'

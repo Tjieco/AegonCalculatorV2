@@ -1,14 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { CalculationOperator } from 'src/app/model/calculationOperator';
 import { CalculateService } from 'src/app/services/calculate.service';
 import { HistoryService } from 'src/app/services/history.service';
 
-export enum CalculationOperator {
-  Add,
-  Subtract,
-  Multiply,
-  Divide
-}
+
 
 @Component({
   selector: 'app-calculate',
