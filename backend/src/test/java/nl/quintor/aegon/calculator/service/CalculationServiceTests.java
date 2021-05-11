@@ -39,14 +39,14 @@ public class CalculationServiceTests {
 
     @Test
     public void testMultiplyReturnsMultiplyCalculation() throws Exception {
-        when(calculator.add(2, 3)).thenReturn(6.0);
-        assertEquals(calculationService.add(2, 3).getResult(), 6.0);
+        when(calculator.multiply(2, 3)).thenReturn(6.0);
+        assertEquals(calculationService.multiply(2, 3).getResult(), 6.0);
     }
 
     @Test
     public void testDivideReturnsDivideCalculation() throws Exception {
-        when(calculator.add(3, 2)).thenReturn(1.5);
-        assertEquals(calculationService.add(3, 2).getResult(), 1.5);
+        when(calculator.divide(3, 2)).thenReturn(1.5);
+        assertEquals(calculationService.divide(3, 2).getResult(), 1.5);
     }
 
     @Test
