@@ -7,7 +7,7 @@ To run this project, execute the following commands in the following places:
 
 - inside the root of "calculator", execute 
 > mvn -N io.takari:maven:0.7.7:wrapper
-then, run:
+- then, run:
 > ./mvnw spring-boot:run
 
 - Inside the root of "calculatorFrontend", execute
